@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üreticiler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="resimler/Lüleburgaz Belediyesi-Photoroom.png" alt="Lüleburgaz Belediyesi" class="header-img">
+        </a>
+        <div class="nav-container">
+            <nav class="top-head-nav">
+                <ul class="top-head-ul top-head-ul-left">
+                    <li class="top-head-li"><a href="index.html" class="top-head-a"><i
+                                class="fa-solid fa-house"></i>Anasayfa</a> </li>
+                    <li class="top-head-li"><a href="product.html" class="top-head-a"><i
+                                class="fa-solid fa-list"></i>Ürünler</a>
+
+                    </li>
+                    <li class="top-head-li"><a href="producer.html" class="top-head-a"><i
+                                class="fa-solid fa-user"></i>Üreticiler</a></li>
+                </ul>
+
+                <ul class="top-head-ul top-head-ul-right">
+
+
+                    <li class="top-head-li"><a href="form.html" class="top-head-a"><i class="fa-regular fa-paper-plane">
+                            </i>İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="filter-sidebar">
+                <ul class="filter">
+                    <form action="" class="form-filter">
+                        <input type="text" placeholder="İstediğiniz Ürünleri Giriniz:" class="text-filter">
+                        <li class="filter-li" id="filter-product"> <i class="fa-solid fa-list"></i>Üreticilerin Sattığı
+                            Ürün Sınıfı</li>
+                        <li class="filter-li"> <input type="checkbox" name="Gida" class="category-filter">Gıda ürünleri
+                        </li>
+                        <li class="filter-li"> <input type="checkbox" name="El-İsi" class="category-filter">El İşi
+                            ürünleri</li>
+                        <li class="filter-li"> <input type="checkbox" name="Bitkisel" class="category-filter">Bitki
+                            Ürünleri</li>
+
+                    </form>
+                </ul>
+            </div>
+            <div class="products">
+                <div class="product-card Add">
+                    <div class="product-card-inside">
+
+                        <div class="product-price" id="producer-name-add">
+                            <label for="producer-name">Ad-Soyad:</label>
+                            <input type="text" id="producer-name" name="producer-name" placeholder="Adınız-SoyAdınız">
+                        
+                            <label for="phone-number">Telefon No:</label>
+                            <input type="number" id="phone-number" name="phone-number" placeholder="10 Hane Giriniz">
+                        
+                            <label for="group-no">Grup No:</label>
+                            <input type="text" id="group-no" name="group-no" placeholder="Grup-No(Ör:Ü-144)">
+                        </div>
+                        
+
+                        <div class="product-text" id="producer-text-add">
+                            <label for="product-name">Ürün Sınıfı:</label>
+                            <select name="product" id="products">
+                                <option value="Gida">Gıda</option>
+                                <option value="Bitkisel">Bitkisel</option>
+                                <option value="El-İsi">El-İşi</option>
+                            </select>
+                            <label for="product-description">Üretici Tanıtımı:</label>
+                            <textarea id="product-description" name="product-description"
+                                placeholder="Ürün açıklamasını girin"></textarea>
+
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="producer-button" id="add-producer-button" type="button">Üretici Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card Gida ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Ali Birgün</h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Ali, tarlasında yetiştirdiği domates, patates ve nane gibi doğal ürünleri satarak
+                                geçimini sağlamaktadır. Yerel üretici olarak, taze ve sağlıklı gıdalar sunmayı
+                                hedeflemektedir.</span>
+                            <br>
+
+                            <span> Sicil No:103631</span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-1</span>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="product-card Gida ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Mustafa BATMAZ </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Mustafa Batmaz, taze erik ve kavun satan bir satıcıdır. Doğal ve lezzetli meyveleriyle
+                                dikkat çekmektedir. Müşterilerine samimi bir hizmet sunarak, ihtiyaçlarına uygun ürünler
+                                sağlamaktadır. Taze meyve arayanlar için ideal bir tercih!</span>
+                            <br>
+                            <span> Sicil No:40715 </span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card Bitkisel ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Erkan DEMİRKIRAN </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Erkan Demirkıran, taze soğan, marul ve kabak satan bir satıcıdır. Müşterilerine doğal ürünler sunarak, sağlıklı beslenmeyi teşvik eder.</span>
+                            <br>
+                            <span> Sicil No:26998
+                            </span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card Gida ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Hasan SEZGİN </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Hasan, karpuz ve soğan satışı yapan bir pazarcıdır. Müşterilerine taze ve doğal ürünler sunarak, sağlıklı seçimler yapmalarını destekler.</span>
+                            <br>
+                            <span> Sicil No:80229
+                            </span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card El-İsi ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Adem İNAN</h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Adem İnan, çorap ve çanta satışı yapan bir pazarcıdır. Geniş ürün yelpazesiyle müşterilerine çeşitli seçenekler sunar.</span>
+                            <br>
+                            <span> Sicil No:143351
+                            </span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card Bitkisel ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Serpil TATAR </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Serpil Tatar, ıhlamur ve sabun satışı yapan bir pazarcıdır. Doğal ürünleriyle sağlıklı seçenekler sunarak, müşterilerin ilgisini çeker.</span>
+                            <br>
+                            <span> Sicil No:143406
+                            </span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card Bitkisel ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Gönül TUNÇ </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Gönül Tunç, elma, biber ve mısır satışı yapan bir pazarcıdır. Taze ve doğal ürünleriyle sağlıklı gıda seçenekleri sunarak, müşterilerinin ilgisini çekmektedir.</span>
+                            <br>
+                            <span> Sicil No:18791</span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card Bitkisel  ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Ayşe GÜNDÜZ </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Ayşe Gündüz, domates, salata ve nane satışı yapmaktadır. Taze ürünleri ile sağlıklı gıda seçenekleri sunarak müşterilerin ilgisini çekmektedir.</span>
+                            <br>
+                            <span> Sicil No:40676</span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-35</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card Gida ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Mehmet CAN </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Mehmet Can, tereyağı ve zeytin satışı yapmaktadır. Ürünleriyle doğal lezzetler sunarak müşterilere sağlıklı gıda seçenekleri sağlamaktadır.</span>
+                            <br>
+                            <span> Sicil No:7713</span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-38</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card El-İsi ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Fatma Öztürk </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Fatma Öztürk, halı ve masa örtüsü satışı yapmaktadır. Ürünleriyle ev dekorasyonuna şıklık ve sıcaklık katmaktadır.</span>
+                            <br>
+                            <span> Sicil No:20226</span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-40</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card Gida ">
+                    <div class="product-card-inside ">
+                        <div class="product-producer">
+                            <h3>Zeynep KAYAN
+                            </h3>
+                        </div>
+                        <div class="product-producer-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="producer-blog">
+                            <span>Zeynep Kayan, salata, mandalina ve portakal satmaktadır. Taze ve sağlıklı ürünleriyle dikkat çeken Zeynep, pazardaki çeşitliliği artırmaktadır.</span>
+                            <br>
+                            <span> Sicil No:20226</span>
+                        </div>
+                        <div class="producer-communication">
+                            <span>Tel No:+90xxxxxxxxxx</span>
+                            <span>Grup No:Ü-96</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="producer-container">
+                    <!-- Yeni üretici kartları buraya eklenecek -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+    <script src="producer.js"></script>
+</body>
+
+</html>

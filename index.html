@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lüleburgaz Yerel Pazar Ağı</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- üst kısım -->
+    <header class="header">
+        <a href="index.html">
+            <img src="resimler/Lüleburgaz Belediyesi-Photoroom.png" alt="Lüleburgaz Belediyesi" class="header-img">
+        </a>
+        <div class="nav-container">
+            <nav class="top-head-nav">
+                <ul class="top-head-ul top-head-ul-left">
+                    <li class="top-head-li"><a href="index.html" class="top-head-a"><i
+                                class="fa-solid fa-house"></i>Anasayfa</a> </li>
+                    <li class="top-head-li"><a href="product.html" class="top-head-a">
+                        <i class="fa-solid fa-list"></i>Ürünler</a>
+                      
+                    </li>
+                    <li class="top-head-li"><a href="producer.html" class="top-head-a">
+                        <i class="fa-solid fa-user"></i>Üreticiler</a></li>
+                </ul>
+
+                <ul class="top-head-ul top-head-ul-right">
+                    
+                                <li class="top-head-li"><a href="form.html" class="top-head-a"><i class="fa-regular fa-paper-plane">
+                            </i>İletişim</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Kısmı -->
+    <main class="main-container">
+        <div class="about-side">
+            <div class="header-baslik">
+                <h4>Lüleburgaz Belediyesi Yerel Pazar Ağı</h4>
+
+            </div>
+            <div class="hakkimda-yazi">
+                <p>Lüleburgaz Belediyesi olarak, şehrimizin yerel üreticilerini desteklemek ve onların ürünlerini daha
+                    geniş kitlelere ulaştırmak amacıyla bu projeyi hayata geçirdik. Amacımız, yerel ekonomiyi
+                    canlandırmak, üreticilerimize dijital dünyada güçlü bir varlık kazandırmak ve tüketicilere
+                    güvenilir, doğal ürünlere kolayca ulaşabilecekleri bir platform sunmaktır.
+                    <hr>
+
+                    Bu proje, yerel üreticilerimizin ürünlerini tanıtmaları ve satışlarını artırmaları için tasarlanmış
+                    bir dijital pazar yeri olarak hizmet verecek. Hem üreticiler hem de tüketiciler için kullanıcı dostu
+                    bir deneyim sunmayı hedefliyoruz. Üreticiler, ürünlerini bu platform üzerinden kolayca
+                    sergileyebilir ve satışa sunabilirken, tüketiciler de güvenli ve hızlı bir şekilde alışveriş yapma
+                    imkanı bulacak.
+
+                   
+
+                </p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="header-baslik">
+                <h4>Öne Çıkanlar</h4>
+            </div>
+            <div class="one-cikaranlar-content">
+                <div class="fotograflar">
+                    <img src="resimler/ÖneCikaranlar.jpg" alt="" class="öne-cikaranlar" id="photo1">
+                </div>
+                <div class="yazi">
+                    <p class="hakkimda-yazi">Pazarımızın yıldızlarından biri olan Meral Teyze, ürünlerinin kalitesiyle
+                        dikkat çekiyor. Mısır ve sarımsakları, doğal yöntemlerle yetiştirilmiş ve pazara taze olarak
+                        getirilmiş. Teyze'nin ürünleri, hem lezzet hem de besin değeri açısından üstün kalitede. Pazara
+                        uğradığınızda, bu harika ürünleri mutlaka denemelisiniz!</p>
+                </div>
+            </div>
+
+              <i class="fa-solid fa-angle-right" id="right-arrow1"></i>
+            <i class="fa-solid fa-angle-left" id="left-arrow1"></i>
+            <div class="one-cikaranlar-content" style="display: none;">
+                <div class="fotograflar">
+                    <img src="resimler/ÖneCikaranlar0.jpg" alt="" id="photo2" class="öne-cikaranlar">
+                </div>
+                <div class="yazi">
+                    <p class="hakkimda-yazi">
+                        Serap Abla, pazarımızın öne çıkan isimlerinden biri olarak ürünlerinin kalitesiyle dikkat
+                        çekiyor. Tereyağından ev yapımı reçellere kadar, her bir ürünü titizlikle hazırlanmış ve
+                        doğallığıyla ön plana çıkıyor.
+
+                        Tereyağları, geleneksel yöntemlerle üretilmiş ve taptaze olarak pazarımıza sunulmuş. Yanında
+                        sunduğu reçeller ise, meyvelerin en iyi haliyle hazırlanmış ve tatlarıyla damakları
+                        şenlendiriyor. Meral Teyze’nin ürünleri, hem lezzet hem de besin değeri açısından mükemmel bir
+                        kaliteye sahip.
+
+                        Pazarımıza uğradığınızda, bu harika ürünleri denemeyi unutmayın!
+                    </p>
+                </div>
+            </div>
+          
+            <div class="form" id="featured-form">
+                <form action="">
+                    <input type="radio" id="checkbox1" name="photo" onclick="toggleImage()" checked>
+                    <input type="radio" id="checkbox2" name="photo" onclick="toggleImage()">
+
+                </form>
+            </div>
+         
+        </div>
+        <div class="haberler">
+            <div class="header-baslik">
+                <h4>Haberler</h4>
+            </div>
+            <div class="haberler-content">
+                <div class="fotograflar">
+                    <img src="resimler/Haberler1.jpg" alt="" class="öne-cikaranlar" id="haberlerphoto1">
+                </div>
+                <div class="yazi">
+                    <h3 style="text-align: left; margin-top: 10px;">Lüleburgazın 3. Pazarı Geliyor</h3>
+                    <section class="hakkimda-yazi">
+                        Lüleburgaz’da yerel üreticilere destek olmak amacıyla yeni bir pazar yeri açılıyor. Şehir
+                        merkezinde
+                        kurulacak olan bu pazar, hem yerel üreticilerin ürünlerini sergilemelerine olanak tanıyacak hem
+                        de
+                        halkın taze ve doğal ürünlere daha kolay erişmesini sağlayacak.
+                    </section>
+                    <section class="hakkimda-yazi">
+                        Lüleburgaz Belediyesi’nin bu yeni girişimi, hem üreticilere destek olacak hem de şehir
+                        ekonomisine
+                        katkıda bulunacak. Pazarın açılış tarihi ve etkinlik programı yakında belediyenin resmi
+                        duyurularıyla açıklanacak.
+                    </section>
+
+                </div>
+            </div>
+            <i class="fa-solid fa-angle-right" id="right-arrow2"></i>
+            <i class="fa-solid fa-angle-left" id="left-arrow2"></i>
+
+
+            <div class="haberler-content" style="display: none;">
+                <div class="fotograflar">
+                    <img src="resimler/haberler2.jpg" alt="" class="öne-cikaranlar">
+                </div>
+
+                <div class="yazi">
+                    <h3 style="text-align: left; top: 18px;">Lüleburgaz Belediye Başkanı Murat Gerenli, Yeni Pazar
+                        Yerini Ziyaret Etti!!</h3>
+                    <section class="hakkimda-yazi">
+                        Lüleburgaz Belediye Başkanı Dr. Murat Gerenli, açılışı heyecanla beklenen yeni pazar yerini
+                        ziyaret etti. Yerel üreticilerle bir araya gelen Başkan Gerenli, hem üreticilerden hem de
+                        vatandaşlardan gelen geri bildirimleri dinleyerek, pazar yerinin Lüleburgaz halkına sunduğu
+                        fırsatları yerinde inceledi.
+                    </section>
+                </div>
+            </div>
+
+            <div class="haberler-content" style="display: none;">
+                <div class="fotograflar">
+                    <img src="resimler/haberler3.jpg" alt="" class="öne-cikaranlar" id="haberlerphoto2">
+                </div>
+                <div class="yazi">
+                    <h3 style="text-align: left; margin-top: 15px;">Lüleburgaz’da Sosyete Pazarı Alışveriş Tutkunlarının
+                        Vazgeçilmezi Oldu</h3>
+                    <section class="hakkimda-yazi">
+                        Lüleburgaz'da uzun süredir faaliyet gösteren Sosyete Pazarı, her hafta yoğun ilgi görmeye devam
+                        ediyor. Şehrin en popüler alışveriş duraklarından biri haline gelen pazar, sunduğu çeşitli
+                        ürünlerle her yaştan ve kesimden insanı kendine çekiyor.
+                    </section>
+                </div>
+            </div>
+            <div class="form" id="news-form">
+                <form action="">
+                    <input type="radio" id="checkbox1" name="photo" onclick="toggleImage()" checked>
+                    <input type="radio" id="checkbox2" name="photo" onclick="toggleImage()">
+                    <input type="radio" id="checkbox3" name="photo" onclick="toggleImage()">
+
+                </form>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="header-baslik">
+                <h4>Belediye Başkanı</h4>
+            </div>
+            <div class="blog-content">
+                <div class="haberler-baslik">
+                    <img src="resimler/images.jpeg" alt="" class="image" id="blogImage1">
+                    <h5 class="kisiler">Lüleburgaz Belediye Başkanı - Murat Gerenli</h5>
+                </div>
+                <div class="yorumlar">
+                    <section>"Yerel Pazar Ağı projemiz, Lüleburgaz'ı sürdürülebilir kalkınmanın öncü şehirlerinden biri
+                        yapma
+                        yolunda önemli bir adım. Üreticilerimizin emeklerinin şehrimizde ve çevresinde hak ettiği değeri
+                        bulmasını sağlayacak bu platform, aynı zamanda yerel ekonomimizi güçlendirecek."</section>
+                </div>
+            </div>
+            </div>
+    
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

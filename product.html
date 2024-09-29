@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="resimler/Lüleburgaz Belediyesi-Photoroom.png" alt="Lüleburgaz Belediyesi" class="header-img">
+        </a>
+        <div class="nav-container">
+            <nav class="top-head-nav">
+                <ul class="top-head-ul top-head-ul-left">
+                    <li class="top-head-li"><a href="index.html" class="top-head-a"><i
+                                class="fa-solid fa-house"></i>Anasayfa</a> </li>
+                    <li class="top-head-li"><a href="product.html" class="top-head-a"><i
+                                class="fa-solid fa-list"></i>Ürünler</a>
+
+                    </li>
+                    <li class="top-head-li"><a href="producer.html" class="top-head-a"><i
+                                class="fa-solid fa-user"></i>Üreticiler</a></li>
+                </ul>
+
+                <ul class="top-head-ul top-head-ul-right">
+                  
+                         
+                                  <li class="top-head-li"><a href="form.html" class="top-head-a"><i class="fa-regular fa-paper-plane">
+                            </i>İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <input type="checkbox" id="menuBtn">
+        <label for="menuBtn" class="menuBtn"><i class="fas fa-bars"></i></label>
+
+        <div class="product-container">
+            <div class="filter-sidebar">
+                <ul class="filter">
+                    <form action="" class="form-filter">
+                        <input type="text" placeholder="İstediğiniz Ürünleri Giriniz:" class="text-filter">
+                        <li class="filter-li" id="filter-product"> <i class="fa-solid fa-list"></i>Ürünler</li>
+                        <li class="filter-li"> <input type="checkbox" name="Gida" class="category-filter">Gıda ürünleri
+                        </li>
+                        <li class="filter-li"> <input type="checkbox" name="El-İsi" class="category-filter">El İşi
+                            ürünleri</li>
+                        <li class="filter-li"> <input type="checkbox" name="Bitkisel" class="category-filter">Bitki
+                            Ürünleri</li>
+                        <input type="text" placeholder="İstediğiniz Üreticiyi Giriniz:" class="text-filter">
+                        <li class="filter-li" id="filter-product"> <i class="fa-solid fa-user"></i>Üreticiler</li>
+                        <li class="filter-li"> <input type="checkbox" name="Ayse-Gündüz">Ayşe Gündüz</li>
+                        <li class="filter-li"> <input type="checkbox" name="Hasan-Sezgin">Hasan Sezgin</li>
+                        <li class="filter-li"> <input type="checkbox" name="Serpil-Tatar">Serpil Tatar</li>
+                        <li class="filter-li"> <input type="checkbox" name="Fatma-Öztürk">Fatma Öztürk</li>
+                        <li class="filter-li"> <input type="checkbox" name="Mehmet-Can">Mehmet Can</li>
+                        <li class="filter-li"> <input type="checkbox" name="Ali-Birgün">Ali Birgün</li>
+                        <li class="filter-li"> <input type="checkbox" name="Mustafa-Batmaz">Mustafa Batmaz</li>
+                        <li class="filter-li"> <input type="checkbox" name="Erkan-Demirkıran">Erkan Demirkıran</li>
+                        <li class="filter-li"> <input type="checkbox" name="Adem-İnan">Adem İnan</li>
+                        <li class="filter-li"> <input type="checkbox" name="Gönül-Tunç">Gönül Tunç</li>
+                        <li class="filter-li"> <input type="checkbox" name="Zeynep-Kayan">Zeynep Kayan</li>
+                    </form>
+                </ul>
+            </div>
+
+            <div class="products">
+                <div class="product-card Add">
+                    <div class="product-card-inside">
+                        <div class="product-image" id="product-image-add">
+                            <label for="product-image" id="product-image-label">Ürün Görseli:</label>
+                            <input type="file" id="product-image" name="product-image" accept="image/*">
+                        </div>
+                        <div class="product-text" id="product-text-add">
+                            <label for="product-name">Ürün Sınıfı:</label>
+                            <select name="product" id="products">
+                                <option value="Gida">Gıda</option>
+                                <option value="Bitkisel">Bitkisel</option>
+                                <option value="El-İsi">El-İşi</option>
+                            </select>
+                            <div class="producer">
+                                <label for="producer-name">Üretici Giriniz:</label>
+                                <select name="producer" id="producer-name">
+                                    <option value="Ali-Birgün">Ali Birgün</option>
+                                    <option value="Mustafa-Batmaz">Mustafa Batmaz</option>
+                                    <option value="Erkan-Demirkıran">Erkan Demirkıran</option>
+                                    <option value="Hasan-Sezgin">Hasan Sezgin</option>
+                                    <option value="Adem-İnan">Adem İnan</option>
+                                    <option value="Serpil-Tatar">Serpil Tatar</option>
+                                    <option value="Gönül-Tunç">Gönül-Tunç</option>
+                                    <option value="Ayşe-Gündüz">Ayşe Gündüz</option>
+                                    <option value="Mehmet-Can">Mehnet Can</option>
+                                    <option value="Fatma-Öztürk">Fatma Öztürk</option>
+                                    <option value="Zeynep-Kayan">Zeynep Kayan</option>
+                                   
+                                </select>
+                            </div>
+                            <label for="product-description">Ürün Açıklaması:</label>
+                            <textarea id="product-description" name="product-description"
+                                placeholder="Ürün açıklamasını girin"></textarea>
+                        </div>
+                        <div class="product-price" id="product-price-add">
+                            <label for="product-price">Fiyat:</label>
+                            <input type="number" id="product-price" name="product-price"
+                                placeholder="Fiyatı girin (TL)">
+                        </div>
+                        <div class="button">
+                            <button class="product-button" id="add-product-button" type="button">Ürünü Ekle</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card Gida Hasan-Sezgin">
+                    <div class="product-card-inside">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler1.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p>Hasan Sezgin, büyük ve tatlı karpuzlarıyla ünlü. Tarlasında sulama ve doğal gübreyle
+                                yetiştirdiği karpuzlar, yazın serinletici meyvelerinden.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi 
+                                    Al</a></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-card Gida Hasan-Sezgin">
+                    <div class="product-card-inside ">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler2.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p> Hasan Sezgin tarlasından toplanan soğanlar, yemeklere lezzet katıyor. Doğal yetiştirme yöntemleri
+                                sayesinde soğanları iri ve dayanıklı.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="product-card Bitkisel Ayse-Gündüz">
+
+                    <div class="product-card-inside ">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler3.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p>Ayşe Gündüz, kendi bahçesinde doğal yöntemlerle ilaçsız domates yetiştiriyor. Her yıl taze
+                                ve lezzetli domatesleri pazarda en çok tercih edilen ürünlerden.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="product-card Gida Ayse-Gündüz">
+                    <div class="product-card-inside ">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler4.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p> Salata için ideal taze marullar ve yeşillikler, Ayşe Gündüz'ün bahçesinden sofralara
+                                geliyor.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al 
+                                    </a></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-card Gida Mehmet-Can">
+                    <div class="product-card-inside">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler5.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p>Mehmet Can kendi ineklerinden elde ettiği sütle yaptığı tereyağı, doğal ve katkısız. Pazarda
+                                müşterileri tarafından tercih edilen geleneksel bir lezzet.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-card El-İsi Fatma-Öztürk">
+                    <div class="product-card-inside">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler6.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p>El dokuması halılarıyla tanınan Fatma Öztürk, geleneksel motiflerle doğal yün kullanarak
+                                halılar üretiyor. Her halı, uzun yılların emeği ve tecrübesini yansıtıyor.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="product-card El-İsi Fatma-Öztürk">
+                    <div class="product-card-inside">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler7.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p>El işi masa örtüleri, Fatma Öztürk'ün en çok sevilen ürünlerinden. İğne oyası ve
+                                işlemeleriyle her biri benzersiz tasarımlara sahip.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-card Bitkisel Serpil-Tatar">
+                    <div class="product-card-inside">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler8.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p> Serpil Tatar'ın bahçesindeki ıhlamur ağaçlarından topladığı yapraklar, doğal ve katkısız.
+                                Kışın sıcak içecek olarak tercih edilen bu şifalı bitkiyi kendi elleriyle topluyor.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card Bitkisel Ayse-Gündüz">
+                    <div class="product-card-inside">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler9.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p>Bahçesindeki nane bitkilerini doğal yollarla büyüten Ayşe Gündüz, bu aromatik bitkiyi
+                                yazın tazeyken, kışın ise kurutarak satıyor.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="product-card Gida Mehmet-Can">
+                    <div class="product-card-inside">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler10.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p>Mehmet Can kendi zeytin ağaçlarından topladığı zeytinleri, özenle işleyerek doğal yollarla sofralık
+                                zeytin haline getiriyor.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-card Bitkisel Serpil-Tatar">
+                    <div class="product-card-inside">
+                        <div class="product-image">
+                            <img src="Ürünler/ürünler11.jpg" alt="">
+                        </div>
+                        <div class="product-text">
+                            <p> Serpil Tatar, doğal yağlar ve bitkiler kullanarak el yapımı sabunlar üretiyor. Bu
+                                sabunlar, özellikle hassas ciltler için tercih ediliyor.</p>
+                        </div>
+                        <div class="product-price">
+                            <section class="text">Fiyat:150 Tl</section>
+
+                        </div>
+                        <div class="button">
+                            <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al
+                                    </a></button>
+                        </div>
+                    </div>
+
+                </div>
+              
+                <div id="products-container"></div>
+            </div>
+
+    </main>
+    <script src="product.js"></script>
+
+
+
+
+</body>
+
+</html>
