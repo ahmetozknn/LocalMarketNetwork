@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <section class="text">Fiyat: ${productData.price} TL</section>
                 </div>
                 <div class="button">
-                    <button class="product-button"><a href="producer.html" class="product-a">Bilgi Al </a></button>
+                    <button class="product-button"><a href="" class="product-a">Sepete Ekle </a></button>
                     <button class="delete-product">Sil</button>
                 </div>
             </div>
@@ -148,3 +148,17 @@ menuBtn.addEventListener('change', function () {
         filterSidebar.style.transform = 'translateX(100%)';
     }
 });
+function addToCart(name, price, description, image) {
+    const product = {
+        name: name,
+        price: price,
+        description: description,
+        image: image
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    window.location.href = "shop.html";  // Sepet sayfasına yönlendir
+}
